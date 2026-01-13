@@ -3,101 +3,187 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;1,100&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Document</title>
   </head>
   <body>
-    <header>
-      <a href="#">Web<span>Studio</span></a>
-      <nav>
-        <ul>
-          <li><a href="./index.html">Студія</a></li>
-          <li><a href="./portfolio.html">Портфоліо</a></li>
-          <li><a href="">Контакти</a></li>
+    <header class="header">
+      <a href="#" class="logo"><span class="logo-fon">Web</span>Studio</a>
+      <nav class="mune">
+        <ul class="menu-list">
+          <li class="nemu-item">
+            <a href="./index.html" class="menu-link">Студія</a>
+          </li>
+          <li class="menu-item">
+            <a href="./portfolio.html" class="menu-link">Портфоліо</a>
+          </li>
+          <li class="menu-item">
+            <a href="" class="menu-link">Контакти</a>
+          </li>
         </ul>
       </nav>
-      <ul>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+38 096 111 11 11">+38 096 111 11 11</a></li>
+      <ul class="header-contact-list">
+        <li class="header-contact-item">
+          <a
+            href="mailto:info@devstudio.com"
+            class="header-contact-link contact-link"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li class="header-contact-item">
+          <a
+            href="tel:+38 096 111 11 11"
+            class="header-contact-link contact-link"
+            >+38 096 111 11 11</a
+          >
+        </li>
       </ul>
     </header>
     <main>
-      <section>
-        <h1>Ефективні рішення для вашого бізнесу</h1>
-        <button type="button">Замовити послугу</button>
+      <section class="hero">
+        <h1 class="hero-text">
+          Ефективні рішення для <br />
+          вашого бізнесу
+        </h1>
+        <button type="button" class="hero-btn">Замовити послугу</button>
       </section>
-      <section>
-        <h2>Про нас</h2>
-        <ul>
-          <li>
-            <h3>Увага для дітей</h3>
-            <p>
+      <!-- About -->
+      <section class="about">
+        <h2 class="about-title">Про нас</h2>
+        <ul class="about-list">
+          <li class="about-item">
+            <h3 class="abot-subtitle">Увага для дітей</h3>
+            <p class="about-text">
               Ідейні міркування, і навіть початок повсякденної роботи з
               формування позиції.
             </p>
           </li>
-          <li>
-            <h3>Пунктуальність</h3>
+          <li class="about-item">
+            <h3 class="abot-subtitle">Пунктуальність</h3>
             <p>
               Завдання організації, особливо рамки і місце навчання кадрів тягне
               у себе.
             </p>
           </li>
-          <li>
-            <h3>Плавання</h3>
-            <p>
+          <li class="about-item">
+            <h3 class="abot-subtitle">Плавання</h3>
+            <p class="about-text">
               Так само консультація з широким активом значною мірою зумовлює.
             </p>
           </li>
-          <li>
-            <h3>Сучасні технології</h3>
-            <p>
+          <li class="about-item">
+            <h3 class="abot-subtitle">Сучасні технології</h3>
+            <p class="about-text">
               Значимість цих проблем настільки очевидна, що реалізація планових
               завдань.
             </p>
           </li>
         </ul>
       </section>
-      <section>
-        <h2>Чим ми займаємося</h2>
-        <ul>
-          <li><img src="./images/works/box 1.jpg" alt="box" width="370" /></li>
-          <li><img src="./images/works/box 2.jpg" alt="box" width="370" /></li>
-          <li><img src="./images/works/box 3.jpg" alt="box" width="370" /></li>
+      <!-- works -->
+      <section class="works">
+        <h2 class="works-title">Чим ми займаємося</h2>
+        <ul class="works-list">
+          <li class="works--item">
+            <img
+              class="works-image"
+              src="./images/works/box 1.jpg"
+              alt="box"
+              width="370"
+            />
+          </li>
+          <li class="works--item">
+            <img
+              class="works-image"
+              src="./images/works/box 2.jpg"
+              alt="box"
+              width="370"
+            />
+          </li>
+          <li class="works--item">
+            <img
+              class="works-image"
+              src="./images/works/box 3.jpg"
+              alt="box"
+              width="370"
+            />
+          </li>
         </ul>
       </section>
-      <section>
-        <h2>Наша команда</h2>
-        <ul>
-          <li>
-            <img src="./images/team/igor.jpg" alt="man" width="270" />
-            <h3>Ігор Дем'яненко</h3>
-            <p>Product Designer</p>
+      <!-- teams -->
+      <section class="teams">
+        <h2 class="teams-title">Наша команда</h2>
+        <ul class="teams-list">
+          <li class="teams-item">
+            <img
+              class="teams-img"
+              src="./images/team/igor.jpg"
+              alt="man"
+              width="270"
+            />
+            <h3 class="teams-subtitle">Ігор Дем'яненко</h3>
+            <p class="teams-text">Product Designer</p>
           </li>
-          <li>
-            <img src="./images/team/olha.jpg" alt="woman" width="270" />
-            <h3>Ольга Рєпіна</h3>
-            <p>Frontend Developer</p>
+          <li class="teams-item">
+            <img
+              class="teams-img"
+              src="./images/team/olha.jpg"
+              alt="woman"
+              width="270"
+            />
+            <h3 class="teams-subtitle">Ольга Рєпіна</h3>
+            <p class="teams-text">Frontend Developer</p>
           </li>
-          <li>
-            <img src="./images/team/mikola.jpg" alt="man" width="270" />
-            <h3>Микола Тарасов</h3>
-            <p>Marketing</p>
+          <li class="teams-item">
+            <img
+              class="teams-img"
+              src="./images/team/mikola.jpg"
+              alt="man"
+              width="270"
+            />
+            <h3 class="teams-subtitle">Микола Тарасов</h3>
+            <p class="teams-text">Marketing</p>
           </li>
-          <li>
-            <img src="./images/team/mihailo.jpg" alt="man" width="270" />
-            <h3>Михайло Єрмаков</h3>
-            <p>UI Designer</p>
+          <li class="teams-item">
+            <img
+              class="teams-img"
+              src="./images/team/mihailo.jpg"
+              alt="man"
+              width="270"
+            />
+            <h3 class="teams-subtitle">Михайло Єрмаков</h3>
+            <p class="teams-text">UI Designer</p>
           </li>
         </ul>
       </section>
     </main>
-    <footer>
-      <a href="">Web<span>Studio</span></a>
-      <ul>
-        <li><address>м. Київ, пр-т Лесі Українки, 26</address></li>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+38 096 111 11 11">+38 096 111 11 11</a></li>
+    <footer class="footer">
+      <a href="#" class="logo"><span class="logo-fon">Web</span>Studio</a>
+      <address class="footer-addres">
+        <a
+          class="foter-addres-link"
+          href="https://maps.app.goo.gl/ePRDomH7ukcv9v4r9"
+        >
+          м. Київ, пр-т Лесі Українки, 26</a
+        >
+      </address>
+      <ul class="footer-list">
+        <li class="footer-item">
+          <a class="footer-link contact-link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li class="footer-item">
+          <a class="footer-link contact-link" href="tel:+38 096 111 11 11"
+            >+38 096 111 11 11</a
+          >
+        </li>
       </ul>
     </footer>
   </body>
